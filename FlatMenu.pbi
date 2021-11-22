@@ -235,7 +235,7 @@ Module FlatMenu
 			
 			StartDrawing(CanvasOutput(\MenuCanvas))
 			DrawingFont(FontID(\Font))
-			TextWidth = #Style_HMargin * 2 + TextWidth(Text)
+			TextWidth = #Style_HMargin * 2 + TextWidth(Text) + Bool(\MenuItems()\Type = #ToggleOff) * 40 ;TODO < quick fix to add a space for toggle item... It should be properly implemented later.
 			StopDrawing()
 			
 			If TextWidth > \MenuWidth
@@ -818,8 +818,7 @@ CompilerIf #PB_Compiler_IsMainFile
 	ForEver
 CompilerEndIf
 ; IDE Options = PureBasic 6.00 Alpha 5 (Windows - x64)
-; CursorPosition = 818
-; FirstLine = 742
-; Folding = --------
+; CursorPosition = 242
+; Folding = CgCACAA9
 ; EnableXP
 ; Executable = flatmenu.exe
