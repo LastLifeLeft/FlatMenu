@@ -94,7 +94,7 @@ Module FlatMenu
 	EndStructure
 	
 	; Style : 
-	#Style_MinimumWidth = 200
+	#Style_MinimumWidth = 100
 	#Style_ItemHeight = 36
 	#Style_HMargin = 23
 	#Style_Border = 2
@@ -205,6 +205,8 @@ Module FlatMenu
 				
 				Redraw(\MenuWindow)
 				
+				
+				StickyWindow(\MenuWindow, #True)
 			EndWith
 			
 		EndIf
@@ -815,9 +817,9 @@ CompilerIf #PB_Compiler_IsMainFile
 		EndSelect
 	ForEver
 CompilerEndIf
-; IDE Options = PureBasic 5.73 LTS (Windows - x64)
-; CursorPosition = 105
-; FirstLine = 72
-; Folding = X3DAIAAy
+; IDE Options = PureBasic 6.00 Alpha 5 (Windows - x64)
+; CursorPosition = 818
+; FirstLine = 742
+; Folding = --------
 ; EnableXP
 ; Executable = flatmenu.exe
